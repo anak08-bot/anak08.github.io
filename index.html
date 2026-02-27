@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hidden Leaf Village</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="" # class="title-logo">
+        <span class="logo">
+          <img src="./images/g3173.png" alt="leaf logo" />
+        </span>
+        <h1>Hidden Leaf Village</h1>
+      </a>
+      <p>Believe It! The Path of the Ninja Starts Here</p>
+    </header>
+
+    <main>
+      <section class="menu">
+        <nav>
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"
+                ><img
+                  src="./images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="close icon"
+              /></a>
+            </li>
+            <li><a href="#">Village</a></li>
+            <li><a href="#">Academy</a></li>
+            <li><a href="#">Jutsu</a></li>
+            <li><a href="#">Missions</a></li>
+          </ul>
+
+          <ul>
+            <li onclick="showSidebar()" class="menu button">
+              <a href="#">
+                <img src="./images/Group.png" alt="burger logo" />
+                <span>Menu</span>
+              </a>
+            </li>
+            <li class="hide-on-mobile"><a href="#">Village</a></li>
+            <li class="hide-on-mobile"><a href="#">Academy</a></li>
+            <li class="hide-on-mobile"><a href="#">Jutsu</a></li>
+            <li class="hide-on-mobile"><a href="#">Missions</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <script>
+        function showSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "flex";
+        }
+        function hideSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "none";
+        }
+      </script>
+
+      <section class="hero">
+        <h2>Welcome to Konoha!</h2>
+        <p>
+          Train hard, never give up, and become the greatest ninja! Dattebayo!
+        </p>
+      </section>
+
+      <section class="container">
+        <div class="card">
+          <div class="card-title">
+            <img src="./images/cyclone 1.png" />
+            <h3>Rasengan</h3>
+          </div>
+          <p>
+            Master the legendary spiraling sphere technique created by the
+            Fourth Hokage. Channel your chakra and unleash devastating power!
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <img src="./images/Group 17.png" />
+            <h3>Chidori</h3>
+          </div>
+          <p>
+            Harness lightning in your palm! The Kakashi's signature move that
+            cuts through anything. Feel the thunder in your hands!
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <img src="./images/Group 7.png" />
+            <h3>Fireball Jutsu</h3>
+          </div>
+          <p>
+            Learn the iconic Uchiha clan technique. Breathe fire and dominate
+            the battlefield with this powerful fire style ninjutsu!
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <img src="./images/cake 1.png" />
+            <h3>Shadow Clone</h3>
+          </div>
+          <p>
+            Create perfect copies of yourself to overwhelm your enemies.
+            Naruto's signature technique for training and combat!
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <img src="./images/eye 1.png" />
+            <h3>Sharingan</h3>
+          </div>
+          <p>
+            Awaken the legendary Uchiha bloodline ability. Copy any jutsu, see
+            through illusions, and predict enemy movements
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <img src="./images/wave 1.png" />
+            <h3>Water Dragon</h3>
+          </div>
+          <p>
+            Summon a massive dragon made of water to crush your opponents.
+            Master the water style and control the battlefield!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        © 2024 Hidden Leaf Village Academy.
+        <span>Shinobi Training Center. All jutsu reserved.</span>
+      </p>
+    </footer>
+  </body>
+</html>
